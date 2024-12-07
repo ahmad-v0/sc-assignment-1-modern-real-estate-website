@@ -129,7 +129,7 @@ header {
 .section-hero {
     /* background: linear-gradient(#51525C, #FFF 20%, #51525C); */ /* being overriden by image */
     /* background-image: url(/assets/Home/Hero-Image.png); */
-    background: linear-gradient(#18181B55 10%, #FCFCFC11 20%, #18181B), url(/assets/Home/Hero-Image.png);
+    background: linear-gradient(#18181B55 10%, #FCFCFC11 20%, #18181B), url(../assets/Home/Hero-Image.png);
     aspect-ratio: 1440/1024;
     background-position: center;
     background-size: contain;
@@ -465,7 +465,7 @@ header {
 /* beginning of properties for footer section  */
 /* beginning of properties for contact section  */
 .section-contact {
-    background: linear-gradient(#FFFFFF11, #18181BCC 42%), url(/assets/Home/contact-form-background.jpg);
+    background: linear-gradient(#FFFFFF11, #18181BCC 42%), url(../assets/Home/contact-form-background.jpg);
     aspect-ratio: 1409/648;
     background-repeat: no-repeat;
     background-size:cover;
