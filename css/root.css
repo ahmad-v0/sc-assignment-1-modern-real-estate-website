@@ -1,0 +1,27 @@
+/* declaration of root properties */
+:root {
+    /* typography section  */
+    --fs-h1: 6.5rem;
+    --fs-h2: 4rem;
+    --fs-h3: 3.25rem;
+    --fs-h4: 3rem;
+
+    --fs-bd-xl: 1.25rem;
+    --fs-bd-l: 1.125rem;
+    --fs-bd-m: 1rem;
+    --fs-bd-s: 0.875rem;
+    --fs-bd-xs: 0.75rem;
+
+    /* color section  */
+    --greyscale-25: #FCFCFC;
+    --greyscale-50: #FAFAFA;
+    --greyscale-100: #F4F4F5;
+    --greyscale-200: #E4E4E7;
+    --greyscale-300: #D1D1D6;
+    --greyscale-400: #A0A0AB;
+    --greyscale-500: #70707B;
+    --greyscale-600: #51525C;
+    --greyscale-700: #3F3F46;
+    --greyscale-800: #26272B;
+    --greyscale-900: #18181B;
+}

@@ -1,0 +1,625 @@
+/* import root css */
+@import url(root.css);
+
+/* import font  */
+@import url(/font/Satoshi_Complete/Fonts/WEB/css/satoshi.css);
+
+/* discarding default properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* declaration of root properties */
+/* not required as root values are declared on separated css file and imported earlier */
+
+/* properties for body  */
+body {
+    width: 100%;
+    height: auto;
+    /* margin: 0 auto; */
+    font-family: "Satoshi", sans-serif;
+    color: var(--greyscale-500);
+    font-size: 1.25rem;
+}
+
+.wrapper {
+    /* width: 90rem; */
+    height: auto;
+    margin: 0 auto;
+    /* position: relative;  */ /* edit- code oprimized by keeping everything inside nav*/
+    /* for header position */
+}
+
+/* properties for all h1-h4 items */
+h1, h2, h3 {
+    font-weight: 400;
+}
+h1 {
+    color: #FFF;
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    color: var(--greyscale-900);
+    font-size: var(--fs-h3);
+}
+
+h3 {
+    color: var(--greyscale-900);
+    font-size: 1.5rem;
+}
+
+/* properties for all anchor tags  */
+a {
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+/* properties for list items  */
+ul {
+    list-style-type: none;
+    /* color: #FCFCFC; */
+}
+
+.display-flex {  /* special class to be applied whenever required to use  */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* beginning of properties for body  */
+/* beginning of properties for header  */
+header {
+    width: 100%;
+    /* width: 90rem; */
+    /* max-width: 90rem; */
+    /* width: calc(100% - 10rem);  */
+    /* edit-takes up width as per body  */
+    /* maintains the width of header to full width of body minus padding */
+    /* no height defined on purpose */
+    padding: 1.25rem 5rem;
+    /* display: flex;
+    justify-content: space-between; */
+    /* position: relative; */
+    position: absolute;
+}
+
+.header-section-nav {
+    /* width: 100%; */
+    max-width: 90rem;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+    color: #FCFCFC;
+    /* position: absolute; */
+}
+
+.header-section-nav ul {
+    display: contents; /* inherits display properties from parent */
+}
+/* 
+.header-section-nav ul li a {
+    color: #FCFCFC;
+} */
+
+.btn {  /* properties applied to all buttons */
+    padding: 0.625rem 1.125rem;
+    /* color: var(--greyscale-900);
+    background-color: #FFF; */
+    color: #FFF;
+    background-color: var(--greyscale-900);
+    border-radius: 0.75rem;
+    font-weight: 600;
+}
+
+.contact-us {
+    color: var(--greyscale-900);
+    background-color: #FFF;
+}
+
+/* end of properties for header  */
+/* brginning of properties for main section  */
+.section {
+    padding: 5rem;
+}
+
+/* beginning of properties for hero section  */
+.section-hero {
+    /* background: linear-gradient(#51525C, #FFF 20%, #51525C); */ /* being overriden by image */
+    /* background-image: url(/assets/Home/Hero-Image.png); */
+    background: linear-gradient(#18181B55 10%, #FCFCFC11 20%, #18181B), url(/assets/Home/Hero-Image.png);
+    aspect-ratio: 1440/1024;
+    background-position: center;
+    background-size: contain;
+    /* padding: 5rem; */
+    /* display: flex; */
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    /* position: relative; */
+}
+
+.section-hero-txt {
+    /* position: relative; */
+    display: contents;
+    /* background-color: red; */
+    /* display: flex; */
+}
+
+.section-hero-txt-btn {
+    /* width: 5rem;
+    height: 5rem; */
+    color: #FFF;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+}
+
+.section-hero-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 0.75rem;
+    background-color: #FAFAFA22;
+}
+/* end of properties for hero section  */
+/* beginning of properties for about us section  */
+.section-about-us-txt {
+    width: 100%;
+    margin-bottom: 3.5rem;
+    /* display: flex;
+    justify-content: space-between;  */
+}
+
+.section-about-us-txt-left {
+    width: 30.82rem;
+    /* display: flex;
+    flex-direction: column;
+    gap: 2rem; */
+    /* properties commented as button takes up full width as result */
+}
+
+.section-about-us-txt-title {
+    margin-bottom: 2rem;
+}
+.section-about-us-txt-right {
+    width: 41.375rem;
+}
+
+.section-about-us-gallery {
+    width: 100%;
+    min-height: 39.125rem;
+    /* display: flex; */
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    /* gap: 2rem; */
+}
+
+/* .section-about-us-gallery:nth-child(2) {
+    align-items: flex-end;
+} */
+
+.section-about-us-gallery-item:nth-child(2) {
+    align-self: flex-end; /* makes the second item to align to the botton */
+}
+
+.section-about-us-gallery-img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.section-about-us-gallery-title {
+    margin-bottom: 0.5rem;
+}
+
+.section-about-us-gallery-item p {
+    font-size: 1rem;
+}
+.section-about-us-gallery-item-left {
+    width: 25%;
+}
+.section-about-us-gallery-item-middle {
+    width: 30%;
+}
+.section-about-us-gallery-item-right {
+    width: 38%;
+}
+/* end of properties for about us section  */
+/* beginning of properties for property section  */
+.section-property {
+    /* width: 100%; */
+    text-align: center; 
+    /* makes the view more button to be on the center of the section */
+}
+.section-property-txt {
+    /* display: flex;
+    justify-content: space-between; */
+    margin-bottom: 3.5rem;
+}
+
+.section-property-txt p {
+    width: 35.8125rem;
+}
+
+.section-property-gallery {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 32%);
+    /* grid-template-columns: repeat(auto-fill, minmanx(32%, 1fr)); */
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+    text-align: start; /* h3 elements get centered if not specified */
+}
+
+.section-property-gallery-tile {
+    /* width: 25.625rem; */
+    /* width: 34%; */
+    position: relative;
+    margin: auto;
+}
+
+.section-property-gallery-tile-img {
+    width: 100%;
+    aspect-ratio: 410/339;
+}
+
+.section-property-gallery-tile-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+}
+
+.tag {
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+    color: #FCFCFC;
+    /* display: inline-block; */
+    /* line-height: 1rem; */
+    /* vertical-align: middle; */
+    background-color: var(--greyscale-900);
+    border-radius: 1.25rem;
+    /* text-align: center; */
+    /* display: flex; */
+    /* display: inline-flex;
+    gap: 0.5rem;
+    align-items: center; */
+    /* align-self: center; */
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+/* 
+.tag-icon {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+} */
+
+.section-property-gallery-tile-txt {
+    padding: 1rem 0;
+    /* display: flex;
+    justify-content: space-between; */
+    font-size: 0.875rem;
+    border-bottom: 1px solid #E4E4E7;
+}
+
+.section-property-gallery-tile-txt-loc {
+    display: flex;
+    align-items: center;
+}
+
+.section-property-gallery-tile-icons {
+    padding-top: 1rem;
+}
+
+.section-property-gallery-tile-icons-icon {
+    font-size: 1rem;
+}
+
+.section-property-gallery-tile-icons-icon:not(:last-child) {
+    border-right: 1px solid;
+    padding-right: 1rem;
+}
+.section-property-gallery-tile-icons-icon:not(:first-child) {
+    padding-left: 1rem;
+}
+
+.property-icon {
+    margin-right: 0.2rem;
+}
+
+/* .view-more {
+    margin: 0 auto;
+} */
+/* end of properties for property section  */
+/* beginning of properties for FAQ section  */
+/* .section-faq {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.section-faq-left {
+    width: 41.5%;
+}
+
+.section-faq-left p {
+    padding: 1.5rem 0 3.5rem;
+}
+
+.section-faq-right {
+    width: 54%;
+}
+
+.section-faq-right li {
+    position: relative;
+}
+
+.faq-q {
+    padding: 1rem;
+    font-size: 1.125rem;
+}
+
+.faq-q:not(:last-child) {
+    margin-bottom: 1rem;
+
+}
+
+.faq-icon-exp {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+}
+
+.faq-a {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+}
+
+.faq-expanded {
+    background-color: #FAFAFA;
+    border-radius: 0.8125rem;
+    color: #18181B;
+}
+/* end of properties for FAQ section  */
+/* beginning of properties for tips and insight section  */
+.section-tips-insights-txt {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+    margin-bottom: 3.5rem;
+}
+
+.section-tips-insights-txt p {
+    width: 34.375rem;
+} 
+
+.section-tips-insights-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+
+.section-tips-insights-gallery-tile-img {
+    width: 100%;
+}
+
+.section-tips-insights-gallery-tile-date-time {
+    padding: 1rem 0;
+}
+
+.section-tips-insights-gallery-tile-date {
+    margin-right: 1rem;
+}
+
+.section-tips-insights-icons {
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.section-tips-insights-icons-left {
+    /* width: 10%; */
+    display: flex; /* empty span does occopy space unles parent has given display flex */
+    gap: 0.5rem;
+}
+
+.section-tips-insights-icon-color {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.5rem;
+    border: 1px solid;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+
+.section-tips-insights-icon-color-black {
+    background-color: #18181B;
+}
+
+.section-tips-insights-icon-direction {
+    padding: 0.75rem;
+    border: 1px solid #18181B;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+.section-tips-insights-icon-direction-forw {
+    color: #FFF;
+    background-color: #18181B;
+}
+/* end of properties for tips and insight section  */
+/* end of properties for main section  */
+
+/* beginning of properties for footer section  */
+/* beginning of properties for contact section  */
+.section-contact {
+    background: linear-gradient(#FFFFFF11, #18181BCC 42%), url(/assets/Home/contact-form-background.jpg);
+    aspect-ratio: 1409/648;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 2.25rem;
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+    padding: 6.875rem 3.5rem;
+    margin: 2.5rem 1rem;
+}
+
+.section-contact-txt {
+    width: 48%;
+    color: #FAFAFA;
+}
+
+.section-contact-txt-title {
+    color: #FCFCFC;
+    margin-bottom: 1.5rem;
+}
+
+.section-contact-form {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #18181B;
+    background-color: #FCFCFC;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.section-contact-form form {
+    display: contents;
+}
+
+.section-contact-form form textarea {
+    padding: 0.75rem 0.875rem;
+    border: 1px solid #E4E4E7 ;
+    border-radius: 0.875rem;
+    font-size: 1rem;
+    resize: none; /* hide the graber, prevent text area from being resized */
+}
+/* end of properties for contact section  */
+/* beginning of properties for site map section  */
+.section-site-map {
+    padding: 5rem 3.5rem;
+    background-color: #18181B;
+    border-bottom: 1px solid #70707B;
+    color: #FCFCFC;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.section-site-map-left {
+    width: 46%;
+}
+
+.section-site-map-left-title {
+    color: #FCFCFC;
+    width: 88%;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-site-map-left-contacts {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.section-site-map-left-contact-type {
+    margin-bottom: 0.75rem;
+}
+
+.section-site-map-right {
+    width: 25%;
+    gap: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    color: #A0A0AB;
+    font-weight: 400;
+}
+
+.section-site-map-right a {
+    color: #FCFCFC;
+}
+
+.section-site-map-connection li {
+    margin-bottom: 1rem;
+}
+
+.section-site-map-nav {
+    /* border-spacing: 1.5rem; */
+    width: 100%;
+    /* height: 100%; */
+    vertical-align: top;
+}
+
+.section-site-map-nav td {
+    padding-bottom: 1rem;
+}
+/* end of properties for site map section  */
+/* beginning of properties for copyright section  */
+
+/* end of properties for copyright section  */
+/* end of properties for footer section  */
+.section-copyright {
+    padding: 2rem 3.5rem 2.5rem;
+    background-color: #18181B;
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+}
+
+.section-copyright a {
+    color: #FCFCFC;
+}
+
+.section-copyright a i {
+    margin-left: 0.5rem;
+}
+/* end of properties for body  */
+
+/* properties for interactive section  */
+a:hover {
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    /* color: green; */
+    background-color: #FCFCFC33;
+    transition: padding 0.3s ease;
+}
+
+a:visited {
+    font-weight: 700;
+}
+
+.btn:hover{
+    padding: 0.625rem 1.125rem;
+    transition: all 0.3s ease;
+}
+
+.contact-us:hover {
+    color: #FCFCFC;
+    background-color: #18181B;
+}
+
+.view-more:hover,
+.learn-more:hover {
+    background-color: #18181B55;
+    color: #18181B;
+    padding: 0.625rem 1.125rem;
+    transition: all 0.3s ease;
+}
+
+
