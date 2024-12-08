@@ -577,6 +577,7 @@ header {
 
 .section-site-map-nav td {
     padding-bottom: 1rem;
+    /* width: 15ch; */
 }
 /* end of properties for site map section  */
 /* beginning of properties for copyright section  */
