@@ -55,6 +55,7 @@ h3 {
 a {
     text-decoration: none;
     color: #FCFCFC;
+    padding: 1rem;
 }
 
 /* properties for list items  */
@@ -131,6 +132,7 @@ header {
     /* background-image: url(/assets/Home/Hero-Image.png); */
     background: linear-gradient(#18181B55 10%, #FCFCFC11 20%, #18181B), url(../assets/Home/Hero-Image.png);
     aspect-ratio: 1440/1024;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     /* padding: 5rem; */
@@ -141,10 +143,12 @@ header {
 }
 
 .section-hero-txt {
-    /* position: relative; */
-    display: contents;
+    position: relative;
+    /* display: contents; */
     /* background-color: red; */
     /* display: flex; */
+    width: 50%;
+    height: auto;
 }
 
 .section-hero-txt-btn {
@@ -154,10 +158,10 @@ header {
     padding: 1.5rem;
     font-size: 2rem;
     border: 2px solid #FFF;
-    border-radius: 50%;
-    /* position: absolute;
+    border-radius: 55%;
+    position: absolute;
     right: 0;
-    bottom: 0; */
+    bottom: 1.5rem;
 }
 
 .section-hero-gallery {
@@ -354,6 +358,11 @@ header {
 
 .section-faq-left p {
     padding: 1.5rem 0 3.5rem;
+}
+
+.section-faq-left-img {
+    width: 100%;
+    aspect-ratio: 532/324;
 }
 
 .section-faq-right {
@@ -593,15 +602,19 @@ header {
 
 /* properties for interactive section  */
 a:hover {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     border-radius: 0.5rem;
     /* color: green; */
     background-color: #FCFCFC33;
-    transition: padding 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-a:visited {
+/* a:visited {
     font-weight: 700;
+} */
+ 
+a:target {
+    font-weight: 800;
 }
 
 .btn:hover{

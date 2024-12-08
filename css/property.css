@@ -1,0 +1,20 @@
+@import url(home.css);
+@import url(./about-us.css);
+
+/* beginning of properties for header section  */
+/* end of properties for header section  */
+/* beginning of properties for hero section  */
+.p-hero {
+    padding-top: 10rem;
+}
+
+.p-hero-title {
+    color: #18181B;
+    font-size: 4rem;
+    width: 45%;
+}
+
+.p-hero-body {
+    width: 41%;
+}
+/* end of properties for hero section  */

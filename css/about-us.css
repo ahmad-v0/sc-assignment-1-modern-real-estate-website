@@ -1,1 +1,180 @@
 @import url(home.css);
+
+/* import font  */
+@import url(../font/Satoshi_Complete/Fonts/WEB/css/satoshi.css);
+
+/* beginning of properties for header section  */
+header nav ul li a {
+    color: #18181B;
+    /* font-weight: 700; */
+}
+/* end of properties for header section  */
+/* beginning of properties for main section  */
+/* beginning of properties for hero section  */
+.au-hero-text {
+    padding-top: 5rem;
+}
+
+.au-hero-text-title {
+    color: #18181B;
+    font-size: 4rem;
+    width: 45%;
+}
+
+.au-hero-text-body {
+    width: 41%;
+}
+
+.au-hero-text-body,
+.au-mission-text-body,
+.au-testimonial-head-body {
+    font-size: 1.125rem;
+    line-height: 1.55;
+} 
+
+.au-hero-img-img {
+    width: 100%;
+    aspect-ratio: 1280/723;
+    padding: 3.5rem 0;
+}
+
+.au-hero-property-stat {
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.au-hero-property-stat span {
+    font-size: 4.82rem;
+    color: #18181B;
+}
+
+.au-hero-property-stat span sup {
+    font-size: 3rem;
+    color: #A0A0AB;
+}
+/* end of properties for hero section  */
+/* beginning of properties for mission section  */
+.au-mission-text {
+    width: 45.8%;
+    line-height: 1.2;
+}
+
+.au-mission-text-title {
+    margin-bottom: 2rem;
+}
+
+
+.au-mission-img {
+    width: 50.5%;
+}
+
+.au-mission-img-img {
+    width: 100%;
+    aspect-ratio: 646/770;
+}
+/* end of properties for mission section  */
+/* beginning of properties for certification section */
+.au-certifications {
+    text-align: center;
+}
+
+.au-certifications-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.au-certificaton {
+    width: 15.2%;
+    aspect-ratio: 194/56;
+}
+/* end of properties for certification section */
+/* beginning of properties for testimonial section  */
+.au-testimonial {
+    background-color: #FCFCFC;
+}
+
+.au-testimonial-head {
+    padding-bottom: 3.5rem;
+    border-bottom: 2px solid #F4F4F5; 
+    margin-bottom: 3.5rem;
+}
+
+.au-testimonial-head-title {
+    width: 45.8%;
+}
+
+.au-testimonial-head-body {
+    width: 44.3%;
+}
+
+.au-testimonial-body {
+    align-items: center;
+}
+
+.au-testimonial-body-txt {
+    width: 51.8%;
+}
+
+.au-testimonial-body-txt-quote-title {
+    font-size: 3rem;
+    padding: 1.25rem 0;
+}
+
+/* .au-testimonial-body-txt-quote-title span {
+    font-size: 4rem;
+} */
+
+.au-testimonial-body-txt-quote-body {
+    /* padding: 1.5rem 0; */
+    font-size: 2rem;
+    line-height: 1.67;
+}
+
+.au-testimonial-body-txt-quote-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1.25rem 0;
+}
+.au-testimonial-body-txt-quote-active,
+.au-testimonial-body-txt-quote-inactive {
+    width: 4.7rem;
+    height: 0.5rem;
+    margin: 1.5rem 0.75rem 0 0;
+    border-radius: 0.5rem;
+}
+
+.au-testimonial-body-txt-quote-active {
+    background-color: #18181B;
+}
+.au-testimonial-body-txt-quote-inactive {
+    background-color: #E4E4E7;
+}
+
+.au-testimonial-body-img {
+    width: 42.7%;
+}
+
+.au-testimonial-body-img-img {
+    width: 100%;
+    aspect-ratio: 546/609;
+}
+
+.au-testimonial-body-txt-quote-status {
+    display: flex;
+}
+
+
+/* end of properties for testimonial section  */
+/* end of properties for main section  */
+
+/* begginning of properties for interactive section  */
+nav a:hover {
+    background-color: #18181B11;
+    transition: padding 0.3s ease;
+}
+/* end of properties for interactive section  */
