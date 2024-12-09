@@ -22,6 +22,7 @@ body {
     font-family: "Satoshi", sans-serif;
     color: var(--greyscale-500);
     font-size: 1.25rem;
+    line-height: 1.55;
 }
 
 .wrapper {
@@ -44,6 +45,7 @@ h1 {
 h2 {
     color: var(--greyscale-900);
     font-size: var(--fs-h3);
+    line-height: 1.2;
 }
 
 h3 {
@@ -120,6 +122,12 @@ header {
     background-color: #FFF;
 }
 
+.simpler,
+.hidden {
+    display: none;
+}
+
+
 /* end of properties for header  */
 /* brginning of properties for main section  */
 .section {
@@ -147,7 +155,7 @@ header {
     /* display: contents; */
     /* background-color: red; */
     /* display: flex; */
-    width: 50%;
+    width: 77.5%;
     height: auto;
 }
 
@@ -282,6 +290,7 @@ header {
 }
 
 .tag {
+    font-size: 1rem;
     padding: 0.5rem 0.75rem;
     margin-right: 0.5rem;
     color: #FCFCFC;
@@ -291,7 +300,8 @@ header {
     background-color: var(--greyscale-900);
     border-radius: 1.25rem;
     /* text-align: center; */
-    /* display: flex; */
+    /* display:none; */
+    /* align-items: center; */
     /* display: inline-flex;
     gap: 0.5rem;
     align-items: center; */
@@ -552,9 +562,10 @@ header {
 }
 
 .section-site-map-right {
-    width: 25%;
-    gap: 1.5rem;
-    display: flex;
+    /* width: 25%; */
+    /* width: 35%; */
+    /* gap: 1.5rem; */
+    /* display: flex; */
     align-items: flex-start;
     color: #A0A0AB;
     font-weight: 400;
@@ -570,7 +581,8 @@ header {
 
 .section-site-map-nav {
     /* border-spacing: 1.5rem; */
-    width: 100%;
+    /* width: 100%; */
+    /* width: 15rem; */
     /* height: 100%; */
     vertical-align: top;
 }
@@ -637,3 +649,295 @@ a:target {
 }
 
 
+/* beginning of properties for responsive section  */
+/* for tablet and laptop with small display  */
+@media only screen and (min-width: 768px) and (max-width: 1240px){
+    /* common properties  */
+    a {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+    }
+
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 2.5rem;
+    }
+
+    /* properties for header section  */
+    header {
+        padding: 1.25rem 2rem;
+    }
+
+    /* properties for hero section  */
+    .section-hero-txt {
+        width: 75%;
+    }
+
+    .section-hero-txt-btn {
+        /* width: 4rem;
+        height: 4rem; */
+        padding: 1rem 1.25rem;
+        font-size: 1.5rem;
+    }
+
+    /* .section-hero-gallery-img {
+        width: 9.5rem;
+        width: 15%;
+    } */
+
+    .section-hero-gallery {
+        width: 15%;
+    }
+
+    /* properties for about us section  */
+    .section-about-us-txt {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-about-us-txt-left,
+    .section-about-us-txt-right {
+        width: 100%;
+    }
+
+    .section-about-us-txt-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* display: grid;
+        grid-template-columns: 55.5% 12.5%; */
+    }
+
+    .section-about-us-txt-title {
+        width: 55.5%;
+    }
+
+    /* properties for property section  */
+    .section-property-txt p,
+    .section-faq-left p,
+    .section-tips-insights-txt p,
+    .section-tips-insights-gallery-tile-date-time,
+    .section-contact-txt p {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    .section-property-gallery,
+    .section-tips-insights-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-property-gallery-tile:nth-child(3n),
+    .section-tips-insights-gallery-tile:nth-child(3n) {
+        display: none;
+    }
+
+    /* properties for faq section  */
+    .section-faq {
+        display: block;
+    }  
+
+    .section-faq-left,
+    .section-faq-right {
+        width: 100%;
+    }
+
+    .section-faq-left-img {
+        display: none;
+    }
+
+/* properties for tips and insight section  */
+.section-tips-insights-txt {
+    display: block;
+    
+}
+
+.section-tips-insights-txt-title {
+    margin-bottom: 1.5rem;
+}
+.section-tips-insights-txt-title,
+.section-tips-insights-txt p {
+    width: 100%;
+}
+
+}
+
+/* properties for smart phone and other smaller displays  */
+@media only screen and (max-width: 767px) {
+/* common properties  */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.section {
+    padding: 1rem;
+}
+
+/* properties for header section  */
+header {
+    padding: 1.25rem 1rem;
+}
+    .header-section-nav {
+        display: none;
+    }
+
+    .simpler {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .simpler-hamburger,
+    .nav-hidden-top-cancel {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .simpler-hamburger:hover + .hidden {
+        display: block;
+        background-color: red;
+    }
+
+    .hidden {
+        width: 100%;
+        border-radius: 0.75rem;
+    }
+
+    .nav-hidden-top {
+        align-items: center;
+    }
+
+    .hidden ul li,
+    .hidden ul li a {
+        width: 100%;
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+
+    .hidden a {
+        color: #18181B;
+    }
+
+    .hidden:hover {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FFF;
+        color: #18181B;
+    }
+
+/* properties for hero section  */
+    .section-hero {
+        width: 100%;
+        height: 40rem;
+        background-size: cover;
+    }
+
+    .section-hero-txt {
+        flex-direction: column;
+    }
+
+    .section-hero-txt-title {
+        margin-bottom: 3rem;
+    }
+    
+
+    .section-hero-txt-btn {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        /* margin-top: 4rem; */
+    }
+    .section-hero-gallery {
+        display: none;
+    }
+
+    /* properties for about us section  */
+    .section-about-us-txt,
+    .section-about-us-gallery,
+    .section-property-txt {
+        display: block;
+        /* margin-bottom: 1.5rem; */
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+    .section-about-us-txt-left,
+    .section-about-us-txt-right {
+        width: 100%;
+    }
+
+    .section-about-us-txt-right {
+        padding-top: 1.5rem;
+        line-height: 1.55;
+    }
+
+    .section-about-us-gallery-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    /* properties for property section  */
+    .section-property-txt p,
+    .section-faq-left p,
+    .section-tips-insights-txt p,
+    .section-tips-insights-gallery-tile-date-time,
+    .section-contact-txt p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .section-property-txt p {
+        width: 100%;
+    }
+    .section-property-gallery,
+    .section-tips-insights-gallery {
+        grid-template-columns: repeat(1, 100%);
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-property-gallery-tile:nth-child(3n),
+    .section-tips-insights-gallery-tile:nth-child(3n) {
+        display: none;
+    }
+
+    /* properties for faq section  */
+    .section-faq {
+        display: block;
+    }  
+
+    .section-faq-left,
+    .section-faq-right {
+        width: 100%;
+    }
+
+    .section-faq-left-img {
+        display: none;
+    }
+
+    .section-faq-left p {
+        padding: 0;
+        text-align: justify;
+    }
+
+
+    
+}
+/* end of properties for responsive section  */
