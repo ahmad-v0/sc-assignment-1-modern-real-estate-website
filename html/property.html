@@ -14,7 +14,7 @@
             <!-- beginning of header section  -->
          <header class="header-section" id="header-section">
             <nav class="header-section-nav display-flex ">
-                <a href="../index.html"><img src="../../assets/about-us/image/Logo-Container.png" alt="Comfea Logo"></a>
+                <a href="../index.html"><img src="../../assets/about-us/image/Logo-Container.png" alt="Comfea Logo" class="comfea-logo"></a>
                 <ul>
                     <li>
                         <a href="../index.html">Home</a>
@@ -26,7 +26,7 @@
                         <a href="../html/property.html">Property</a>
                     </li>
                     <li>
-                        <a href="#">Agent</a>
+                        <a href="./contacts.html">Agent</a>
                     </li>
                     <li>
                         <a href="../html/blogs.html">Blog</a>
@@ -36,6 +36,37 @@
                     </li>
                 </ul>
                 <a href="#" class="btn contact-us">Contact Us</a>
+            </nav>
+            <nav class="simpler">
+                <a href="index.html"><img src="../assets/about-us/image/Logo-Container.png" alt="Comfea Logo" class="comfea-logo"></a>
+                <img src="../assets/about-us/icons/hamburger-icon.png" alt="NavBar" class="simpler-hamburger">
+                <nav class="hidden">
+                    <div class="nav-hidden-top display-flex">
+                        <a href="index.html"><img src="../assets/about-us/icons/Logo-Container.png" alt="Comfea Logo" class="comfea-logo"></a>
+                        <img src="../assets/Home/icons/icon-cancel.png" alt="Cancel" class="nav-hidden-top-cancel">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="html/about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="html/property.html">Property</a>
+                        </li>
+                        <li>
+                            <a href="./contacts.html">Agent</a>
+                        </li>
+                        <li>
+                            <a href="html/blogs.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="html/faqs.html">FAQ&apos;s</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn learn-more learn-more-hidden">Contact Us</a>
+                </nav>
             </nav>
          </header>
         <!-- end of header section  -->
@@ -57,7 +88,10 @@
             <!-- boginning of hero section  -->
             <!-- beginning of gallery section  -->
              <section class="section p-gallery">
-                <input type="search" name="p-search" class="p-gallery-searchbar" placeholder="Search Your Dream Property">
+                <div class="p-gallery-searchbar-wrapper display-flex">
+                    <input type="search" name="p-search" class="p-gallery-searchbar" placeholder="Search Your Dream Property">
+                    <img src="../assets/property-listings/icons/input-selectors.png" alt="Selector" class="p-gallery-selector">
+                </div>
                 <div class="p-gallery-body-wrapper display-flex">
                     <aside class="p-gallery-body-sidebar">
                         <div class="p-gallery-body-sidebar-btns display-flex">
@@ -467,12 +501,37 @@
                         </div>
                         <button type="button" class="btn p-view-more">View More</button>
                     </div>
+                </div>
              </section>
             <!-- end of gallery section  -->
          </main>
         <!-- end of main section  -->
          <!-- beginning of footer section  -->
          <footer class="footer-section">
+            <!-- beginning of contact section  -->
+            <section class="section-contact display-flex">
+                <div class="section-contact-txt">
+                    <h2 class="section-contact-txt-title">
+                        Need a help to find your comfort home?
+                    </h2>
+                    <p>
+                        Don&apos;t hesitate to get in touch with us and begin your journey to owning your dream home. We&apos;re here to guide you every step of the way!
+                    </p>
+                </div>
+                <div class="section-contact-form">
+                    <form>
+                        <label for="Full Name">Full Name</label>
+                        <!-- <input type="text" name="Full Name"> -->
+                        <label for="Email*">Email*</label>
+                        <!-- <input type="email" name="Email*">   -->
+                        <label for="Email*">Email*</label>
+                        <!-- <input type="email" name="Email*"> -->
+                        <textarea name="Message" placeholder="Leave us a message" rows="6"></textarea>  
+                    </form>
+                    <button type="button" class="btn btn-send">Send</button>
+                </div>
+            </section>
+            <!-- end of contact section  -->
             <!-- beginning of site map section  -->
              <section class="section-site-map display-flex">
                 <div class="section-site-map-left">
@@ -507,7 +566,7 @@
                     </div>
                     </div>
                 </div> 
-                <div class="section-site-map-right">
+                <div class="section-site-map-right display-flex">
                     <table class="section-site-map-nav">
                         <tr>
                             <td>Navigation</td>
@@ -522,7 +581,7 @@
                         </tr>
                         <tr>
                             <td><a href="../html/property.html">Listing Product</a></td>
-                            <td><a href="#">Agent</a></td>
+                            <td><a href="./contacts.html">Agent</a></td>
                         </tr>
                     </table>
                     <ul class="section-site-map-connection">
