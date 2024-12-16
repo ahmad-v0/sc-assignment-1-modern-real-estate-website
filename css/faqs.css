@@ -1,0 +1,120 @@
+/* import section  */
+@import url(../css/blogs.css);
+
+/* beginning of properties for main section  */
+
+.main-section {
+    padding-top: 5rem;
+}
+
+/* properties for hero section  */
+
+.faq-hero-text {
+    text-align: center;
+}
+
+.faq-hero-text-title,
+.faq-hero-text-body {
+    width: 61.7%;
+    margin: 0 auto;
+}
+
+.faq-hero-text-body {
+    margin:1.5rem auto;
+}
+
+.faq-hero-searchbar {
+    max-width: 33.5rem;
+    width: 62%;
+    margin: 0 auto 1rem;
+}
+
+.faq-hero-text-q-type {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.faq-hero-text-q-type li {
+    padding: 0.25rem 0.5rem;
+}
+
+.faq-hero-text-q-type li:not(:first-child) {
+    background-color: #F4F4F5;
+    border-radius: 0.25rem;
+}
+
+/* properties for questionere section  */
+
+.faq-sidebar {
+    width: 20%;
+    min-width: 14rem;
+    font-size: 1rem;
+}
+
+.faq-sidebar-items-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.faq-sidebar-items li:nth-child(-n+2) {
+    color: #18181B ;
+    font-weight: 600;
+}
+
+.faq-sidebar-items li:nth-child(2) {
+    border-left: 2px solid var(--greyscale-900);
+}
+
+.faq-sidebar-items-category {
+    padding: 0.5rem 1rem;
+    border-left: 2px solid var(--greyscale-200);
+}
+
+.faq-questionere,
+.faq-questionere li {
+    /* width: 76%; */
+    width: 100%;
+}
+/* end of properties for main section  */
+
+/* beginning of properties for resposvive section  */
+/* properties for tablet and desktop  */
+@media only screen and (min-width: 768px) {
+    /* properties for hero section - 768px */
+    .faq-hero-text-title {
+        font-size: 2.5rem;
+    }
+
+    .faq-hero-text-title,
+    .faq-hero-text-body {
+        width: 78%;
+        text-align: center;
+    }
+
+    /* properties for side bar - 768px */
+    .faq-sidebar {
+        display: block;
+    }
+}
+
+/* properties for smaller tablets */
+@media only screen and (max-width: 767.99px) {
+    /* properties for hero section - 767.99px */
+    .faq-hero-text-title,
+    .faq-hero-text-body {
+        text-align: center;
+    }
+}
+
+/* properties for smaller smartphones */
+@media only screen and (max-width: 550px) {
+    /* properties for hero section - 550px */
+    .faq-hero-text-title,
+    .faq-hero-text-body,
+    .faq-hero-searchbar {
+        width: 100%;
+    }     
+}
+/* end of properties for resposvive section  */

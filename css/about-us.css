@@ -8,6 +8,9 @@ header nav ul li a {
     color: #18181B;
     /* font-weight: 700; */
 }
+
+
+
 /* end of properties for header section  */
 /* beginning of properties for main section  */
 /* beginning of properties for hero section  */
@@ -22,7 +25,7 @@ header nav ul li a {
 }
 
 .au-hero-text-body {
-    width: 41%;
+    width: 52.5%;
 }
 
 .au-hero-text-body,
@@ -76,6 +79,11 @@ header nav ul li a {
     width: 100%;
     aspect-ratio: 646/770;
 }
+
+.au-mission-img-img-hidden {
+    display: none;
+}
+
 /* end of properties for mission section  */
 /* beginning of properties for certification section */
 .au-certifications {
@@ -178,3 +186,171 @@ nav a:hover {
     transition: padding 0.3s ease;
 }
 /* end of properties for interactive section  */
+
+/* beginning of responsive style properties  */
+/* responsive properties desktop and device with small screen  */
+@media only screen and (max-width: 1240px) {
+    /* common properties  */
+    .au-hero-text-body,
+    .au-mission-text-body,
+    .au-testimonial-head-body,
+    .au-testimonial-body-txt-quote-name {
+        font-size: 1rem;
+        line-height: 1.55;
+    } 
+
+    /* properties for hero area - 1240  */
+    .au-hero-text-title {
+        font-size: 2.5rem;
+    }
+
+    .au-hero-property-stat span {
+        font-size: 3rem;
+    }
+
+    .au-hero-property-stat span sup {
+        font-size: 2rem;
+    }
+
+    /* properties for mission section - 1240  */
+    .au-mission {
+        flex-direction: column;
+    }
+
+    .au-mission-text,
+    .au-mission-img {
+        width: 100%;
+    }
+
+    .au-mission-img {
+        margin-top: 3rem;
+        width: 100%;
+        /* height: 32.82rem; */
+        aspect-ratio: 864/525;
+    }
+
+    .au-mission-img-img {
+        /* width: 100%; */
+        /* height: 32.82rem; */
+        display: none;
+        
+    }
+
+    .au-mission-img-img-hidden {
+        width: 100%;
+        display: block;
+    }
+
+    /* properties for certification section - 1240  */
+    .au-certifications-title {
+        font-weight: 400;
+    }
+
+    /* properties for testimonial section - 1240  */
+    .au-testimonial-body-txt-quote-mark {
+        width: 2rem;
+    }
+
+    .au-testimonial-body-txt-quote-title {
+        font-size: 2rem;
+    }
+
+    .au-testimonial-body-txt-quote-body {
+        font-size: 1.25rem;
+    }
+
+    .au-testimonial-body-img,
+    .au-testimonial-body-img-img {
+        height: 100%;
+        aspect-ratio: 404/496;
+    }
+
+}
+
+/* responsive properties for tablet and large screen mobiles */
+@media only screen and (max-width: 767px) {
+
+    /* properties for hero section - 767  */
+    .au-hero-text,
+    .au-hero-property-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .au-hero-text-title,
+    .au-hero-text-body,
+    .au-hero-img {
+        width: 100%;
+    }
+
+    .au-hero-img {
+        aspect-ratio: 1/1;
+    }
+
+    .au-hero-img-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .au-hero-property-stat {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* properties for mission section - 767  */
+    /* .au-mission-img-img-hidden {
+        aspect-ratio: 1/1;
+    } */
+
+    /* properties for certification section - 767  */
+    .au-certifications-title {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    .au-certificatons-gallery {
+        /* flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding-bottom: 3.75rem;
+    }
+
+    .au-certificaton {
+        width: 100%;
+    }
+
+    /* properties for testimonial section - 767  */
+    .au-testimonial-head,
+    .au-testimonial-body {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .au-testimonial-head-title,
+    .au-testimonial-head-body,
+    .au-testimonial-body-txt,
+    .au-testimonial-body-img {
+        width: 100%;
+    }
+
+    .au-testimonial-body-img {
+        padding-top: 3.5rem;
+        padding-bottom: 3.75rem;
+    }
+}
+
+/* properties for extra small device  */
+@media only screen and (max-width: 424px) {
+    /* properties for certification section - 424  */
+    
+    .au-certificatons-gallery {
+        /* flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 1.5rem;
+        padding-bottom: 3.75rem; */
+    }
+
+}
+/* beginning of responsive style properties  */

@@ -20,6 +20,9 @@
 }
 /* end of properties for hero section  */
 /* beginning of properties for gallery section  */
+.p-gallery-searchbar-wrapper {
+    align-items: flex-start;
+}
 .p-gallery-searchbar {
     background-image: url(../assets/property-listings/icons/magnifying-glass-solid.svg);
     background-repeat: no-repeat;
@@ -32,7 +35,18 @@
     margin-bottom: 2.5rem;
     width: 100%;
     font-size: 1rem;
-    color: #E4E4E7;
+    /* color: #E4E4E7; */
+}
+
+.p-gallery-searchbar:focus {
+    background-image: none;
+    padding-left: 1rem;
+}
+
+.p-gallery-selector {
+    width: 3rem;
+    height: 3.375rem;
+    display: none;
 }
 
 .p-gallery-body-sidebar {
@@ -89,3 +103,128 @@
 } */
 /* end of properties for gallery section  */
 /* end of properties for main section  */
+
+
+/* beginning of properties for respnsive section  */
+/* beginning of responsive properties for laptops  */
+@media only screen and (max-width: 1240px) {
+    /* properties for hero section - 1240px */
+
+    .p-hero-title {
+        font-size: 3.25rem;
+    }
+
+    .p-hero-body {
+        font-size: 1.125rem;
+    }
+
+    /* properties for gallery section - 1240px */
+    .section-property-gallery-tile:nth-child(3n) {
+        display: block;
+    }
+
+    .p-gallery-body-sidebar {
+        width: 20%;
+    }
+
+    .p-gallery-body-sidebar-btns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .p-gallery-body-sidebar-btn {
+        width: 100%;
+    }
+
+    .p-gallery-wrapper {
+        width: 75%;
+    }
+}
+/* end of responsive properties for laptops  */
+
+/* beginning of properties for tablet */
+@media only screen and (max-width: 768px) {
+
+    /* properties for hero section - 1240px */
+
+    .p-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .p-hero-body {
+        font-size: 1rem;
+    }
+
+    /* properties for gallery section - 768px */
+
+    .p-gallery-searchbar {
+        width: calc(100% - 4rem);
+    }
+
+    .p-gallery-selector {
+        display: block;
+    }
+
+    .p-gallery-body-sidebar {
+        display: none;
+    }
+
+    .p-gallery-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 720px) {
+    /* properties for gallery section - 720px  */
+    .tag,
+    .section-property-gallery-tile-txt-loc,
+    .section-property-gallery-tile-icons-icon {
+        font-size: 0.75rem;
+    }
+
+    .section-property-gallery-tile-txt-name,
+    .section-property-gallery-tile-txt-price h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 660px) {
+    .section-property-gallery-tile-icons-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .p-gallery-body-sidebar-article {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+/* end of properties for tablet */
+
+/* beginning of properties for smartphones  */
+@media only screen and (max-width: 425px) {
+    /* properties for hero section - 425  */
+    .p-hero {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .p-hero-title, 
+    .p-hero-body {
+        width: 100%;
+    }
+
+    .p-hero-body {
+        font-size: 0.875rem;
+    }
+
+    /* properties for gallery section - 425px */
+    .p-gallery-body-sidebar-article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* end of properties for smartphones  */
+/* end of properties for respnsive section  */

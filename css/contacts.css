@@ -1,0 +1,112 @@
+/* import section  */
+@import url(../css/faqs.css);
+
+/* beginning of proeprties for main section  */
+/* beginning of proeprties for agent contacts  */
+.contact-agents {
+    color: #18181B;
+}
+
+.contact-agents-forms,
+.contact-agents-address {
+    width: 48%;
+    font-size: 1rem;
+}
+
+.contact-agents-forms-name,
+.phone-number,
+textarea,
+.send-message {
+    width: 100%;
+}
+
+.contact-agents-forms-name {
+    column-count: 2;
+    margin-bottom: 3rem;
+}
+
+.contact-agents-forms-name li,
+.phone-number,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.phone-number,
+textarea {
+    border: 1px solid #E4E4E7;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
+
+select,
+.phone-number-digs {
+    border: none;
+    margin: 1rem 0 2rem;
+}
+
+.phone-number-digs {
+    width: calc(100% - 4.5rem);
+}
+
+textarea {
+    resize: none;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.send-message {
+    margin-top: 2rem;
+}
+
+.contact-agents-address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.contact-agents-address-tile p {
+    padding: 0.25rem 0;
+}
+
+.contact-agents-address-tile-type,
+.contact-agents-address-tile-address {
+    font-weight: 700;
+}
+
+.contact-agents-address-tile-about {
+    color: #70707B;
+}
+/* end of proeprties for agent contacts  */
+/* end of proeprties for main section  */
+
+/* beginning of responsive properties */
+/* beginning of responsive properties for tablet and smartphones */
+@media only screen and (max-width: 768px) {
+    /* properties for agent contacts section - 768px */
+    .contact-agents {
+        flex-direction: column;
+        gap: 2.5rem;
+    
+    }
+
+    .contact-agents-forms,
+    .contact-agents-address {
+        width: 100%;
+    }
+
+    .contact-agents-address-tile-icon {
+        width: 2rem;
+    }
+}
+/* end of responsive properties for tablet and smartphones */
+
+/* beginning of properties for smartphones */
+@media only screen and (max-width: 425px) {
+    /* properties for agent contacts section - 425px */
+    .contact-agents-forms-name {
+        column-count: 1;
+    }
+}
+/* end of properties for smartphones */
+
+/* end of responsive properties */
