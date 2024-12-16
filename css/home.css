@@ -374,11 +374,16 @@ header {
 
 .section-property-gallery-tile-icons {
     padding-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    /* display: grid commented as to create a section with specific width
+    that behave well in different screen size */
+    display: flex;
+    justify-items: center;
 }
 
 .section-property-gallery-tile-icons-icon {
+    width: 100%;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -387,14 +392,15 @@ header {
 
 .section-property-gallery-tile-icons-icon:not(:last-child) {
     border-right: 1px solid;
-    /* padding-right: 1rem; */
+    padding-right: 0.5rem;
 }
 .section-property-gallery-tile-icons-icon:not(:first-child) {
-    padding-left: 0.875rem;
+    /* padding-left: 0.875rem; */
+    padding-left: 0.5rem;
 }
-.section-property-gallery-tile-icons-icon:nth-child(2){
+/* .section-property-gallery-tile-icons-icon:nth-child(2){
     padding: 0 0.4rem;
-}
+} */
 
 .property-icon {
     margin-right: 0.2rem;
